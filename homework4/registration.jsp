@@ -56,7 +56,10 @@
 		isError = true;
         errorText += "<li>Password is empty!</li>";
 	}
-
+	if(name == null || name.isEmpty()){
+		isError = true;
+        errorText += "<li>Name field is empty</li>";
+	}
 	if(gender == null || gender.isEmpty()){
 		isError = true;
         errorText += "<li>Gender field is empty</li>";
